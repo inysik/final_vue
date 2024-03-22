@@ -1,35 +1,35 @@
 
 <!-- <h1> привет </h1> -->
-<template>
+<!-- <template>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&family=Pacifico&family=Raleway:ital,wght@1,300;1,400&family=Roboto:ital,wght@0,100;1,300&family=Seymour+One&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css">
-<HelloComponent></HelloComponent>
+    <link rel="stylesheet" href="./style.css"> -->
+<!-- <HelloComponent></HelloComponent>
 <HeaderLogo/>
 <BannerHomePages/>
 <HeadingIndex/>
 <ProdIndex/>
 <CounterIndex/>
 <BlogIndex/>
-<Footer/>
+<Footer/> -->
 <!-- тут должна быть вторая страница с хедером -->
-<TopBlog/>
+<!-- <TopBlog/>
 <Latest_Post_Blog/>
-<Cards_bloc/>
+<Cards_bloc/> -->
 <!-- тут должна закончится вторая страница с футером -->
 <!-- тут начало 3 страницы тоже с хедером-->
-<Banner_Det_blog/>
+<!-- <Banner_Det_blog/>
 <div class="blog_det_contents center">
 <ButtonsTags/>
 <ArrComponents/>
 </div>
-</template>
+</template> -->
 
-<script>
+<!-- <script>
 import HelloComponent from './components/HelloComponent.vue';
 import HeaderLogo from './components/HeaderLogo.vue';
 import BannerHomePages from './components/BannerHomePages.vue';
@@ -78,4 +78,24 @@ components:{HelloComponent,HeaderLogo,BannerHomePages,HeadingIndex,ProdIndex,Cou
     width: 1200px;
   }
 
+</style> -->
+
+
+<template>
+    <h1>hi hello</h1>
+<ProductDetails/>
+</template>
+
+<script>
+import ProductDetails from './components/ProductDetails.vue';
+    export default {
+     name:'App',
+     components:{ProductDetails}   
+    }
+</script>
+
+<style lang="scss" scoped>
+.title{
+    color: red;
+}
 </style>
