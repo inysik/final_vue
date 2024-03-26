@@ -29,6 +29,8 @@
 
 </div>
 <BlogDetails/>
+
+<Swiper/>
 </template>
 
 <script>
@@ -48,13 +50,14 @@ import Banner_Det_blog from './components/Banner_Det_blog.vue';
 import ButtonsTags from './components/ButtonsTags.vue';
 import ArrComponents from './components/ArrComponents.vue';
 import BlogDetails from './components/BlogDetails.vue';
+import Swiper from './components/Swiper.vue'
 
 
 
 export default {
 components:{
-    HelloComponent,HeaderLogo,BannerHomePages,HeadingIndex,ProdIndex,CounterIndex,BlogIndex,Footer,TopBlog,Latest_Post_Blog,Cards_bloc,Banner_Det_blog,ButtonsTags,ArrComponents,
-    BlogDetails}
+    // HelloComponent,HeaderLogo,BannerHomePages,HeadingIndex,ProdIndex,CounterIndex,BlogIndex,Footer,TopBlog,Latest_Post_Blog,Cards_bloc,Banner_Det_blog,ButtonsTags,ArrComponents,
+Swiper}
 
 }
 </script>
