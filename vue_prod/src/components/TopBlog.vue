@@ -2,7 +2,8 @@
     <div class="top">
         <img :src="images" alt=""  style=" display: block;
         max-width: 100%;
-        height: auto;">
+        height: auto;"
+        width="100%">
         <div class="top_content center">
             <h2 class="top_title">Articles & News</h2>
             <p class="top_text">Home / Blog</p>

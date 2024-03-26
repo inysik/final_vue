@@ -11,7 +11,7 @@
         </div>
      </template>
   <script>
-  import { defineComponent, h } from 'vue';
+  import { defineComponent, h, createApp } from 'vue';
   import ImageBloc1 from '@/assets/img/Image_bloc1.jpg'; // Импорт изображения
   
   // Определяем компоненты

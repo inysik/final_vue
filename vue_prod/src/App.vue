@@ -8,58 +8,83 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css"> 
- <HelloComponent></HelloComponent>
+
 <HeaderLogo/>
-<BannerHomePages/>
-<HeadingIndex/>
-<ProdIndex/>
-<CounterIndex/>
-<BlogIndex/>
-<Footer/>
+<!-- статовая страница -->
+<RouterView name="bannerHomePages"/>
+<RouterView name="headingIndex"/>
+<RouterView name="prodIndex,"/>
+<RouterView name="counterIndex"/>
+<RouterView name="blogIndex"/>
+<!-- страница project -->
+
+<RouterView name="topBlog"/>
+<RouterView name="latest_Post_Blog"/>
+<RouterView name="cards_bloc"/>
+
+<!-- страница blog -->
+<router-view name="banner_Det_blog"/>
+<div class="blog_det_contents center">
+  <router-view name="buttonsTags"/>
+  <router-view name="arrComponents"/>
+</div>
+<router-view name="blogDetails"/>
+<router-view name="swiper"/>
+<RouterView name="footer"/>
+
+<!-- <BannerHomePages/> -->
+<!-- <HeadingIndex/> -->
+<!-- <ProdIndex/> -->
+<!-- <CounterIndex/> -->
+<!-- <BlogIndex/> -->
+<!-- <Footer/> -->
 <!-- тут должна быть вторая страница с хедером -->
-<TopBlog/>
-<Latest_Post_Blog/>
-<Cards_bloc/>
+<!-- <TopBlog/> -->
+<!-- <Latest_Post_Blog/> -->
+<!-- <Cards_bloc/> -->
 <!-- тут должна закончится вторая страница с футером -->
 <!-- тут начало 3 страницы тоже с хедером-->
-<Banner_Det_blog/>
-<div class="blog_det_contents center">
-<ButtonsTags/>
-<ArrComponents/>
+<!-- <Banner_Det_blog/> -->
+<!-- <div class="blog_det_contents center"> -->
+<!-- <ButtonsTags/> -->
+<!-- <ArrComponents/> -->
 
-</div>
-<BlogDetails/>
+<!-- </div> -->
+<!-- <BlogDetails/> -->
 
-<Swiper/>
+<!-- <Swiper/> -->
 </template>
 
 <script>
-import HelloComponent from './components/HelloComponent.vue';
+// import HelloComponent from './components/HelloComponent.vue';
 import HeaderLogo from './components/HeaderLogo.vue';
-import BannerHomePages from './components/BannerHomePages.vue';
-import HeadingIndex from './components/HeadingIndex.vue';
-import ProdIndex from './components/ProdIndex.vue';
-import ProjectIndex from './components/ProdIndex.vue.vue';
-import CounterIndex from './components/CounterIndex.vue';
-import BlogIndex from './components/BlogIndex.vue';
-import Footer from './components/Footer.vue';
-import TopBlog from './components/TopBlog.vue';
-import Latest_Post_Blog from './components/Latest_Post_Blog.vue';
-import Cards_bloc from './components/Cards_bloc.vue';
-import Banner_Det_blog from './components/Banner_Det_blog.vue';
-import ButtonsTags from './components/ButtonsTags.vue';
-import ArrComponents from './components/ArrComponents.vue';
-import BlogDetails from './components/BlogDetails.vue';
-import Swiper from './components/Swiper.vue'
+// import BannerHomePages from './components/BannerHomePages.vue';
+// import HeadingIndex from './components/HeadingIndex.vue';
+// import ProdIndex from './components/ProdIndex.vue';
+// import ProjectIndex from './components/ProdIndex.vue.vue';
+// import CounterIndex from './components/CounterIndex.vue';
+// import BlogIndex from './components/BlogIndex.vue';
+// import Footer from './components/Footer.vue';
+// import TopBlog from './components/TopBlog.vue';
+// import Latest_Post_Blog from './components/Latest_Post_Blog.vue';
+// import Cards_bloc from './components/Cards_bloc.vue';
+// import Banner_Det_blog from './components/Banner_Det_blog.vue';
+// import ButtonsTags from './components/ButtonsTags.vue';
+// import ArrComponents from './components/ArrComponents.vue';
+// import BlogDetails from './components/BlogDetails.vue';
+// import Swiper from './components/Swiper.vue'
+// import NotFound from './components/NotFound.vue'
 
 
 
 export default {
 components:{
-    // HelloComponent,HeaderLogo,BannerHomePages,HeadingIndex,ProdIndex,CounterIndex,BlogIndex,Footer,TopBlog,Latest_Post_Blog,Cards_bloc,Banner_Det_blog,ButtonsTags,ArrComponents,
-Swiper}
+//     HelloComponent,HeaderLogo,BannerHomePages,HeadingIndex,ProdIndex,CounterIndex,BlogIndex,Footer,TopBlog,Latest_Post_Blog,Cards_bloc,Banner_Det_blog,ButtonsTags,ArrComponents,BlogDetails,
+// Swiper,
 
-}
+HeaderLogo
+
+}}
 </script>
 
 <style lang="scss">
