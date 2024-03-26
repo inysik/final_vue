@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-// import HeaderLogo from '@/components/HeaderLogo.vue';
+import HeaderLogo from "@/components/HeaderLogo.vue";
 import BannerHomePages from "@/components/BannerHomePages.vue";
 import HeadingIndex from "@/components/HeadingIndex.vue";
 import ProdIndex from "@/components/ProdIndex.vue";
@@ -23,36 +23,44 @@ const routes = [
     path: "/",
     name: "Home",
     components: {
+      headerLogo: HeaderLogo,
       bannerHomePages: BannerHomePages,
       headingIndex: HeadingIndex,
       prodIndex: ProdIndex,
-      counterIndex:CounterIndex,
-      blogIndex:BlogIndex,
-      footer:Footer,
-
+      counterIndex: CounterIndex,
+      blogIndex: BlogIndex,
+      footer: Footer,
     },
   },
   {
     path: "/Project",
     name: "Project",
-    components:{
-    topBlog: TopBlog,
-    latest_Post_Blog:Latest_Post_Blog,
-    cards_bloc:Cards_bloc,
-    footer:Footer,
-
-  }},
+    components: {
+      headerLogo: HeaderLogo,
+      topBlog: TopBlog,
+      latest_Post_Blog: Latest_Post_Blog,
+      cards_bloc: Cards_bloc,
+      footer: Footer,
+    },
+  },
   {
     path: "/Blog",
     name: "Blog",
-    components: { 
-      banner_Det_blog:Banner_Det_blog,
-      buttonsTags:ButtonsTags,
-      arrComponents:ArrComponents,
-      blogDetails:BlogDetails,
-      swiper:Swiper,
-      footer:Footer,
-
+    components: {
+      headerLogo: HeaderLogo,
+      banner_Det_blog: Banner_Det_blog,
+      buttonsTags: ButtonsTags,
+      arrComponents: ArrComponents,
+      blogDetails: BlogDetails,
+      swiper: Swiper,
+      footer: Footer,
+    },
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: "404",
+    components: {
+      notFound: NotFound,
     },
   },
 ];

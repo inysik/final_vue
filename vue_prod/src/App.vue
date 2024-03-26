@@ -9,13 +9,15 @@
 
     <link rel="stylesheet" href="./style.css"> 
 
-<HeaderLogo/>
+<!-- <HeaderLogo/> -->
 <!-- статовая страница -->
+<RouterView name="headerLogo"/>
 <RouterView name="bannerHomePages"/>
 <RouterView name="headingIndex"/>
 <RouterView name="prodIndex,"/>
 <RouterView name="counterIndex"/>
 <RouterView name="blogIndex"/>
+<RouterView name="notFound"/>
 <!-- страница project -->
 
 <RouterView name="topBlog"/>
